@@ -1,0 +1,268 @@
+/*body{
+
+    align-items: center;
+    justify-content: center;
+}
+section{
+    position: relative;
+    margin: 20px;
+    justify-content: center;
+    background:rgb(190, 129, 114);
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 2px solid aquamarine;
+    padding:20px;
+}*/
+/*.todo__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+}
+.todo__item{
+    padding: 5px;
+    border: 4px solid;
+    cursor: pointer;
+}
+.todo__item:hover{
+    border-color: royalblue;
+}
+.todo__item.is-completed{
+    background-color: darkseagreen;
+}*/
+/*.box{
+    width: 200px;
+    height: 200px;
+    background: aqua;
+}
+p{
+    color: black;
+}
+section{
+    transition-duration:0.5s;
+}
+
+section:nth-child(2){transition-delay: 0,2s;}
+section:nth-child(3){transition-delay: 0.4s;}
+section:nth-child(4){transition-delay: 0.6s;}
+section:not(.is-visible){
+    opacity:0;
+}
+
+section:not(.is-visible):nth-child(odd){
+    transform:50vw;
+}
+section:not(.is-visible):nth-child(even){
+    transform:-50vw;
+}
+.preloader{
+    position: fixed;
+    z-index:calc(infinity);
+    inset: 0;
+    background-color: rebeccapurple;
+    animation-name: fade-out;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+    opacity:0;
+    pointer-events: none;  
+}
+.preloader__in{
+    position: absolute;
+    inset: 0;
+    background-color: coral;
+    animation-name: circle;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+    clip-path: circle(75%);
+}
+@keyframes fade-out{
+    0%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@keyframes circle{
+    0%{clip-path: circle(75%);}
+    50%{clip-path: circle(25%);}
+    100%{clip-path: circle(75%);}
+}*/
+/*.draggable{
+    position: absolute;
+    z-index:1;
+    cursor: grab;
+    transition-property: scale, opacity;
+    transition-duration: 0.2s;
+    touch-action: none;
+}
+.dragganble.is-dragging{
+    cursor:grabbing;
+    opacity: 0.5;
+    scale: 1.05;
+}*/
+/*
+.font{
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+.flig{
+    display: block;
+    justify-items:center;
+    align-items: center;
+}
+.plus,.minus,.delenie,.umnojenie{
+    width:30px;
+    height: 30px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}*/
+
+body{
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: relative;
+    margin-top: 200px;
+}
+
+.block{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: cadetblue;
+    width: 537px;
+    height: 300px;
+
+}
+.block__otvet>.displey{
+    background: white;
+    color: black;
+    width: 525px;
+    height: 45px;
+    font-size: 30px;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 10px solid black;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.block__click{
+    display:block;
+    align-items: center;
+    width: 640px;
+    height: 470px;
+
+}
+.oo{
+    height: 40px;
+    width: 208px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, black, transparent);
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    transition: backgraund 0.15s;
+}
+.ravno{
+    height: 40px;
+    width: 207px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, black, transparent);
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    transition: backgraund 0.15s;
+}
+.one,.two,.thre,.plus,.cler-oul,.toch,.vosvet2,.foo,.faew,.sixes,.minus,
+.coren,.sevent,.cvadrat,.eigt,.nain,.umnojenie,.delenie{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, black, transparent);
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    transition: backgraund 0.15s;
+
+}
+.delenie:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.umnojenie:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.nain:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.eigt:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.sevent:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.minus:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.sixes:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.faew:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.foo:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.plus:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.thre:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.two:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.one:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.ravno:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.oo:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.toch:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.cler-oul:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
+.cvadrat:hover{
+    background: rgb(50, 90,108);
+    color: white;
+}
